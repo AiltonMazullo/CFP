@@ -1,0 +1,10 @@
+.form-card {
+    color: var(--cor-secundaria);
+    padding: 24px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 1rem;
+    border-radius: 32px;
+  }
+  

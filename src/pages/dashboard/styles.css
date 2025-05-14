@@ -1,0 +1,117 @@
+.nome-usuario {
+  position: fixed;
+  top: 0;
+  left: 7em;
+  margin-top: 3vh;
+}
+
+.data {
+  position: fixed;
+  top: 0;
+  right: 1em;
+  margin-top: 3vh;
+}
+
+.container-caixas-dashboard {
+  display: grid;
+  grid-template-columns: 600px 600px;
+  grid-template-areas:
+    "saldo caixa"
+    "lucro lucro";
+  overflow: hidden;
+  padding: 6em;
+  gap: 1rem;
+}
+
+.caixa-navegar-primeiro {
+  grid-area: saldo;
+}
+
+.caixa-navegar-segundo {
+  grid-area: caixa;
+}
+
+.caixa-navegar-terceiro {
+  grid-area: lucro;
+}
+
+.caixa-navegar {
+  width: 30vw;
+  height: 40vh;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  flex: 1;
+}
+
+.caixa-saldo-conta {
+  display: grid;
+  grid-template-columns: 83px 400px 20px;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "imagem saldo icone"
+    "imagem dinheiro icone";
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 1.5em;
+  background-image: url("../../assets/AD-icone.svg") no-repeat 32px;
+}
+
+.image-moedas {
+  grid-area: imagem;
+}
+
+.saldo-conta {
+  grid-area: saldo;
+}
+
+.image-adicionar {
+  grid-area: icone;
+}
+
+.dinheiro-conta {
+  grid-area: dinheiro;
+}
+
+.caixa-receitas-receita,
+.caixa-saldos-saldo {
+  color: #049804;
+}
+
+.caixa-despesas-despesa {
+  color: #c90606;
+}
+
+.caixa-receitas,
+.caixa-despesas,
+.caixa-saldos {
+  width: 35%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.2em;
+  border: 1px solid var(--cor-primaria);
+  border-radius: 22px;
+
+  & p {
+    font-size: 12px;
+  }
+}
+
+.caixas-secundarias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-bottom: 1em;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1400px) {
+}

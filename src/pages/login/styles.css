@@ -1,0 +1,86 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, #6c2282, #662549, #ae445a, #f39f5a);
+}
+
+.login-box {
+  display: flex;
+  width: 60vw;
+  height: 60vh;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.login-left {
+  width: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-right {
+  width: 50%;
+  background-color: var(--cor-primaria);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container_input-checkbox {
+  display: flex;
+  gap: 15px;
+  margin: 5%;
+  align-items: center;
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 12px;
+}
+
+.links-navegacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.25rem;
+  gap: 5px;
+}
+
+.links-navegacao-registro {
+  color: var(--cor-secundaria);
+  font-size: 18px;
+}
+
+.links-navegacao-senha {
+  color: var(--cor-secundaria);
+  font-size: 18px;
+}
+
+.spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid var(--cor-primaria);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 0.7s linear infinite;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

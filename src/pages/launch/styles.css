@@ -1,0 +1,35 @@
+.container-lancamentos {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30em;
+  gap: 12em;
+}
+
+.container-receitas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inputs-lancamentos {
+    
+}
+
+.custom-button-lancamentos, .custom-button-despesas, .custom-button-investimentos {
+  text-align: center;
+  width: 15vw;
+  background-color: var(--cor-secundaria); /*#f3f3f3 */
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #662549;
+  padding: 1.1em ;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.custom-button-lancamentos:hover {
+  background-color: var(--cor-secundaria);
+}
+

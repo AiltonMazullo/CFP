@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
-import { useState } from "react";
 import Logo from "../../components/Logo";
 import Button from "../../components/Button";
 import FormCard from "../../components/FormCard";

@@ -1,16 +1,15 @@
 .custom-button {
-    width: 100%;
-    background-color:var(--cor-secundaria);
-    color: #662549;
-    padding: 10px 16px;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-  }
-  
-  .custom-button:hover {
-    background-color: var(--cor-secundaria);
-  }
-  
+  width: 100%;
+  background-color: var(--cor-secundaria);
+  color: #662549;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.custom-button:hover {
+  background-color: var(--cor-secundaria);
+}

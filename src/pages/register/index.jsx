@@ -5,7 +5,7 @@ import Button from "../../components/Button";
 import FormCard from "../../components/FormCard";
 import InputText from "../../components/InputText";
 import ErrorPopup from "../../components/PopUp/Erro";
-import SucessPopup from "../../components/PopUp/Sucess";
+import SucessPopup from "../../components/PopUp/Sucesso";
 import { registrar } from "../../services/authService";
 import { Link, useNavigate } from "react-router-dom";
 

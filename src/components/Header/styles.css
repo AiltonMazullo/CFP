@@ -1,0 +1,20 @@
+.cabecalho {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+.nome-usuario {
+  position: fixed;
+  top: 0;
+  left: 7em;
+  margin-top: 3vh;
+}
+
+.data {
+  position: fixed;
+  top: 0;
+  right: 1em;
+  margin-top: 3vh;
+}

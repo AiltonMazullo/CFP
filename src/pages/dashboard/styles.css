@@ -1,26 +1,13 @@
-.nome-usuario {
-  position: fixed;
-  top: 0;
-  left: 7em;
-  margin-top: 3vh;
-}
-
-.data {
-  position: fixed;
-  top: 0;
-  right: 1em;
-  margin-top: 3vh;
-}
-
 .container-caixas-dashboard {
   display: grid;
   grid-template-columns: 600px 600px;
+  grid-template-rows: 400px;
   grid-template-areas:
     "saldo caixa"
     "lucro lucro";
   overflow: hidden;
-  padding: 6em;
-  gap: 1rem;
+  padding: 3em;
+  gap: .5em;
 }
 
 .caixa-navegar-primeiro {
@@ -41,8 +28,23 @@
   background-color: #f3f3f3;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
+  padding: 1em;
   flex: 1;
+}
+
+.caixa-navegar-segundo, .caixa-navegar-terceiro {
+  display: flex;
+  justify-content: center;
+
+  & h3 {
+  display: inline-block;
+  padding: 0.3em 1em;
+  border-top: 2px solid var(--cor-primaria);   
+  color: var(--cor-primaria);
+  font-weight: bold;
+  font-size: 1em;
+  
+  }
 }
 
 .caixa-saldo-conta {
@@ -56,7 +58,7 @@
   align-items: center;
   align-content: center;
   margin-bottom: 1.5em;
-  background-image: url("../../assets/AD-icone.svg") no-repeat 32px;
+  background-image: url("../../assets/AD-icone.svg") no-repeat;
 }
 
 .image-moedas {
@@ -75,8 +77,7 @@
   grid-area: dinheiro;
 }
 
-.caixa-receitas-receita,
-.caixa-saldos-saldo {
+.caixa-receitas-receita {
   color: #049804;
 }
 

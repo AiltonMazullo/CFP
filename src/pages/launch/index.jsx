@@ -1,17 +1,36 @@
-import Sidebar from '../../components/Sidebar'
-import './styles.css'
+import React from "react";
+import "./styles.css";
+import Sidebar from "../../components/Sidebar";
+import Header from "../../components/Header";
 
-function Lancamentos() {
-    return(
-       <div className='container'>
-            <div className='container-barra-lateral'>
-                <Sidebar />
-            </div>
-            <div className='container-menu-principal'>
+function Launch() {
 
-            </div>
-       </div>
-    )
+  return (
+    <>
+      <Sidebar />
+      <Header />
+      <main className="container-lancamentos">
+        <div className="container-receitas">
+          <button type="button" className="custom-button-lancamentos">
+            Receitas
+          </button>
+          <div className="inputs-lancamentos">
+            
+          </div>
+        </div>
+        <div className="container-despesas">
+          <button type="button" className="custom-button-despesas">
+            Despesas
+          </button>
+        </div>
+        <div className="div-investimentos">
+          <button type="button" className="custom-button-investimentos">
+            Investimentos
+          </button>
+        </div>
+      </main>
+    </>
+  );
 }
 
-export default Lancamentos
+export default Launch;
